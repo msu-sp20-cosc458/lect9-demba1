@@ -3,11 +3,11 @@ import flask
 
 app = flask.Flask(__name__)
 
-@app.route('/')
+@app.route('/index')
 def index():
-        return flask.render_template('index.html')
+    return flask.render_template('index.html')
 
-@app.route('/')
+@app.route('/hello')
 def hello():
     return flask.render_template('hello.html')
 
